@@ -1,0 +1,14 @@
+import random
+
+number_of_webpages = 50
+
+
+f = open(r"C:\Users\Lenovo\pageRankPageLink.txt", "w")
+
+for row in range(number_of_webpages):
+	for column in range(number_of_webpages):
+		relation = str(random.randint(0,1))
+		f.write(relation+" ")
+	f.write('\n')
+
+f.close()
